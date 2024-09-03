@@ -35,4 +35,4 @@ Usage:
             if you had a monitor with the resolution 3840x2160, the factor change for the x and y would be as follows:
 
             3840/1980 = 2, 2160/1080 = 2 so instead of 1, MONITOR_RESOLUTION x and y would both be 2.
-    
+    • To stop the code, press and hold the q, key until the script notifies you that it has stopped running.
