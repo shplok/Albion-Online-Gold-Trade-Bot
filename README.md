@@ -31,7 +31,7 @@ Usage:
     • If you have a different window resolution than 1920x1080, you need to find the factor in which the monitor is    
       different in size and use the provided "MONITOR_RESOLUTION_FACTOR_X and MONITOR_RESOLUTION_FACTOR_Y".
         
-        For Example:\
+        For Example:
             if you had a monitor with the resolution 3840x2160, the factor change for the x and y would be as follows:
 
             3840/1980 = 2, 2160/1080 = 2 so instead of 1, MONITOR_RESOLUTION x and y would both be 2.
