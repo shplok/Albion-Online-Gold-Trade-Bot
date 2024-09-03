@@ -8,11 +8,11 @@ This Python-based trading bot is designed for Albion Online. It automates the pr
 
 Features:
 
-    • Automated Trading: Automatically buys or sells gold based on threshold prices.\
-    • Market Data Fetching: Retrieves historical gold prices to determine optimal buy/sell points.\
-    • OCR Integration: Uses Tesseract OCR to read in-game data like current gold and silver quantities.\
-    • Random Movements: Periodically moves the mouse to simulate human interaction and avoid detection.\
-    • Customizable Intervals: Set the time interval for checking and placing market orders.\
+    • Automated Trading: Automatically buys or sells gold based on threshold prices.
+    • Market Data Fetching: Retrieves historical gold prices to determine optimal buy/sell points.
+    • OCR Integration: Uses Tesseract OCR to read in-game data like current gold and silver quantities.
+    • Random Movements: Periodically moves the mouse to simulate human interaction and avoid detection.
+    • Customizable Intervals: Set the time interval for checking and placing market orders.
 
 
 Requirements:
