@@ -1,0 +1,3 @@
+This repository contains a Python script that automates gold trading in the MMORPG Albion Online. 
+It fetches real-time market data, calculates buy/sell thresholds, and places orders in the game. 
+The bot uses Tesseract OCR to read in-game quantities and includes features like random mouse movements to avoid detection.
