@@ -3,7 +3,7 @@ Albion Online Trading Bot
 
 Overview:
 
-This Python-based trading bot is designed for Albion Online.\ It automates the process of buying and selling gold based on real-time market data.\ The bot monitors the game's gold prices, calculates thresholds for buying and selling, and automatically places orders in the game's market.\ It also includes a feature for random mouse movements to simulate human behavior, reducing the likelihood of detection by anti-bot systems.
+This Python-based trading bot is designed for Albion Online. It automates the process of buying and selling gold based on real-time market data. The bot monitors the game's gold prices, calculates thresholds for buying and selling, and automatically places orders in the game's market. It also includes a feature for random mouse movements to simulate human behavior, reducing the likelihood of detection by anti-bot systems.
 
 
 Features:
