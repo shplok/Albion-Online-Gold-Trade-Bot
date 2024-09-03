@@ -22,7 +22,7 @@ Tesseract OCR installed and correctly configured.
 
 
 Usage
-    • Clone the repository.&
+    • Clone the repository.\
     • Install the required packages via pip.&
     • Ensure Tesseract OCR is installed and the path is set in the script.&
     • Run the script and follow the prompts to start trading in Albion Online.
