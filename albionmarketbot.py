@@ -11,10 +11,8 @@ import sys
 import keyboard
 import random
 
-# pytesseract path
- # sawyer_path = 'C:\Users\sawye\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
- # chris_path = "C:\Program Files\Tesseract-OCR\tesseract.exe"
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\sawye\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+
+pytesseract.pytesseract.tesseract_cmd = r'YOUR PATH TO TESSERACT HERE'
 
 # Constants
 
