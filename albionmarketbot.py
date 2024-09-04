@@ -43,7 +43,7 @@ CONFIRM_SELL_ORDER_X, CONFIRM_SELL_ORDER_Y = 930 * MONITOR_RESOLUTION_FACTOR_X, 
 
 CLOSE_MARKET_X, CLOSE_MARKET_Y = 1458 * MONITOR_RESOLUTION_FACTOR_X, 168 * MONITOR_RESOLUTION_FACTOR_Y = 1
 
-RANDOM_MOVEMENT_INTERVAL = random.randint(5, 25)
+RANDOM_MOVEMENT_INTERVAL = random.randint(3, 10)
 
 skip_next_run_until = None  # Global flag for skip timing
 last_movement_time = datetime.now()  # Initialize the last movement time
