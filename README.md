@@ -1,3 +1,8 @@
+#-------------------------------------------------------------------------------------------
+# NOTICE: Please refrain from using this for now as Albion is  cracking down on botting.
+#-------------------------------------------------------------------------------------------
+
+
 Albion Online Trading Bot
 
 
