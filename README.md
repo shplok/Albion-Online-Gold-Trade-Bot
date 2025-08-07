@@ -48,6 +48,6 @@ Usage:
             X: 3840/1980 = 2, 
             Y: 2160/1080 = 2 
             so instead of 1, MONITOR_RESOLUTION_FACTOR x and y would both be 2.
-    • If you are running into issues setting up the resolution of the monitor, please consult 
-[resolutions.md](resolutions.md)
     • To stop the code, press and hold the 'q' key until the script notifies you that it has stopped running. (or ctrl-c/ctrl-z)
+If you are running into issues setting up the resolution of the monitor, please consult 
+[resolutions.md](resolutions.md)
