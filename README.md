@@ -33,7 +33,9 @@ Tesseract OCR installed and correctly configured.
 Usage:
 
     • Clone the repository.
-    • Install the required packages via pip.
+    • Navigate to where you cloned the repo
+    • Install the required packages via the following code:
+    '''pip install -r requirements.txt'''
     • Ensure Tesseract OCR is installed and the path is set in the script.
     • Run the script and follow the prompts to start trading in Albion Online.
     • Ensure that you keep the game in fullscreen and that it is the focused window.
@@ -43,5 +45,8 @@ Usage:
         For Example:
             if you had a monitor with the resolution 3840x2160, the factor change for the x and y would be as follows:
 
-            3840/1980 = 2, 2160/1080 = 2 so instead of 1, MONITOR_RESOLUTION x and y would both be 2.
-    • To stop the code, press and hold the q, key until the script notifies you that it has stopped running.
+            X: 3840/1980 = 2, 
+            Y: 2160/1080 = 2 
+            so instead of 1, MONITOR_RESOLUTION_FACTOR x and y would both be 2.
+    • If you are running into issues setting up the resolution of the monitor, please consult [resolutions.md](resolutions.md)
+    • To stop the code, press and hold the 'q' key until the script notifies you that it has stopped running. (or ctrl-c/ctrl-z)
