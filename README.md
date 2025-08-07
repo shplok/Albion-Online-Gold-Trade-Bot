@@ -36,6 +36,7 @@ Usage:
     • Navigate to where you cloned the repo
     • Install the required packages via the following code:
 '''pip install -r requirements.txt'''
+
     • Ensure Tesseract OCR is installed and the path is set in the script.
     • Run the script and follow the prompts to start trading in Albion Online.
     • Ensure that you keep the game in fullscreen and that it is the focused window.
