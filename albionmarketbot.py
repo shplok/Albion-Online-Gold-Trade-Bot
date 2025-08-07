@@ -11,16 +11,22 @@ import sys
 import keyboard
 import random
 
-
+# --------------------------------------------------------------------------------------------------- #
+# These are the only items needed to be changed for your setup
+# --------------------------------------------------------------------------------------------------- #
 pytesseract.pytesseract.tesseract_cmd = r'YOUR PATH TO TESSERACT HERE INCLUDING "tesseract.exe"'
-
-# Constants
-
 
 MONITOR_RESOLUTION_FACTOR_X = 1
 MONITOR_RESOLUTION_FACTOR_Y = 1
 
-INTERVAL = 0.15  # Interval in minutes
+# --------------------------------------------------------------------------------------------------- #
+
+
+
+
+
+# Constants
+INTERVAL = 0.26  # Interval in minutes
 MARKET_COORDINATES_X, MARKET_COORDINATES_Y = 1694 * MONITOR_RESOLUTION_FACTOR_X, 30 * MONITOR_RESOLUTION_FACTOR_Y
 SELECT_ORDERS_X, SELECT_ORDERS_Y = 812 * MONITOR_RESOLUTION_FACTOR_X, 977 * MONITOR_RESOLUTION_FACTOR_Y
 CHECK_X, CHECK_Y, CHECK_WIDTH, CHECK_HEIGHT = 568 * MONITOR_RESOLUTION_FACTOR_X, 521 * MONITOR_RESOLUTION_FACTOR_Y, 50, 30
@@ -43,7 +49,7 @@ CONFIRM_SELL_ORDER_X, CONFIRM_SELL_ORDER_Y = 930 * MONITOR_RESOLUTION_FACTOR_X, 
 
 CLOSE_MARKET_X, CLOSE_MARKET_Y = 1458 * MONITOR_RESOLUTION_FACTOR_X, 168 * MONITOR_RESOLUTION_FACTOR_Y
 
-RANDOM_MOVEMENT_INTERVAL = random.randint(3, 10)
+RANDOM_MOVEMENT_INTERVAL = random.randint(2, 6)
 
 skip_next_run_until = None  # Global flag for skip timing
 last_movement_time = datetime.now()  # Initialize the last movement time
@@ -194,7 +200,7 @@ def input_silver_price(threshold, x, y):
 
 def open_market():
     pyautogui.moveTo(MARKET_COORDINATES_X, MARKET_COORDINATES_Y)
-    time.sleep(0.55)  # Small delay before clicking
+    time.sleep(random.uniform(0.319, 1.14))
     pyautogui.click()
 
 def buy_gold(buy_threshold, extracted_number, silver_quantity):
@@ -202,26 +208,26 @@ def buy_gold(buy_threshold, extracted_number, silver_quantity):
         print(f"Buying gold at price: {buy_threshold}")
         silver_input = silver_quantity // buy_threshold
         input_gold_price(silver_input, BUY_GOLD_INPUT_COORDINATES_X, BUY_GOLD_INPUT_COORDINATES_Y)
-        time.sleep(0.69)
+        time.sleep(random.uniform(0.319, 6.78))
         
         input_silver_price(buy_threshold, BUY_SILVER_INPUT_COORDINATES_X, BUY_SILVER_INPUT_COORDINATES_Y)
-        time.sleep(0.46)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.moveTo(BUY_ORDER_COORDINATES_X, BUY_ORDER_COORDINATES_Y)
         pyautogui.click()
-        time.sleep(0.53)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.moveTo(CONFIRM_BUY_ORDER_X, CONFIRM_BUY_ORDER_Y)
-        time.sleep(0.2)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.click()
-        time.sleep(0.55)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.moveTo(CONFIRM_SELL_ORDER_X, CONFIRM_SELL_ORDER_Y)
-        time.sleep(0.78) 
+        time.sleep(random.uniform(0.319, 6.78)) 
         pyautogui.click()
         print("Proceeding with gold purchase.")
-        time.sleep(0.64)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.moveTo(CONFIRM_SUBMITTED_X, CONFIRM_SUBMITTED_Y)
-        time.sleep(1.13)
+        time.sleep(random.uniform(0.319, 6.78))
         pyautogui.click()
-        time.sleep(0.78) 
+        time.sleep(random.uniform(0.319, 6.78)) 
         
         pyautogui.moveTo(CLOSE_MARKET_X, CLOSE_MARKET_Y)
         pyautogui.click()
@@ -229,23 +235,23 @@ def buy_gold(buy_threshold, extracted_number, silver_quantity):
 def sell_gold(sell_threshold, extracted_number):
     print(f"Selling gold at price: {sell_threshold}")
     input_gold_price(extracted_number, SELL_GOLD_INPUT_COORDINATES_X, SELL_GOLD_INPUT_COORDINATES_Y)
-    time.sleep(0.59)
+    time.sleep(random.uniform(0.319, 6.78))
     input_silver_price(sell_threshold, SELL_SILVER_INPUT_COORDINATES_X, SELL_SILVER_INPUT_COORDINATES_Y)
-    time.sleep(0.55)
+    time.sleep(random.uniform(0.319, 6.78))
     pyautogui.moveTo(SELL_ORDER_COORDINATES_X, SELL_ORDER_COORDINATES_Y)
     pyautogui.click()
     print("Proceeding with gold sale.")
-    time.sleep(0.3)
+    time.sleep(random.uniform(0.319, 6.78))
     pyautogui.moveTo(CONFIRM_SELL_ORDER_X, CONFIRM_SELL_ORDER_Y)
-    time.sleep(0.55)
+    time.sleep(random.uniform(0.319, 6.78))
     pyautogui.click()
-    time.sleep(0.55)
+    time.sleep(random.uniform(0.319, 6.78))
     pyautogui.moveTo(CONFIRM_SUBMITTED_X, CONFIRM_SUBMITTED_Y)
-    time.sleep(0.78) 
+    time.sleep(random.uniform(0.319, 6.78)) 
     pyautogui.click()
-    time.sleep(0.78) 
+    time.sleep(random.uniform(0.319, 6.78)) 
     pyautogui.moveTo(CLOSE_MARKET_X, CLOSE_MARKET_Y)
-    time.sleep(1.08)
+    time.sleep(random.uniform(0.319, 6.78))
     pyautogui.click()
     
 
