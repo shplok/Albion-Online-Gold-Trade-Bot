@@ -1,0 +1,8 @@
+pyautogui
+opencv-python-headless
+pytesseract
+numpy
+Pillow
+schedule
+keyboard
+requests
